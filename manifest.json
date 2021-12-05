@@ -1,0 +1,45 @@
+{
+	"name": "Data Extension",
+	"description": "",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": [ "storage", "activeTab", "declarativeContent", "scripting", "tabs" ],
+	"host_permissions": [ "https://*/*" ],
+	"action": {},
+	"web_accessible_resources": [
+		{
+			"resources": [ "JSON/stockData.json" ],
+			"extension_ids": [ "glcchcbnhaealhpopfiphkdgfabbgdnl" ]
+		}
+	],
+	"content_scripts": [
+		{
+			"js": [ "jQuery.js", "contentScripts/contentScript2.js" ],
+			"matches": [ "https://www.nasdaq.com/market-activity/ipos/overview*" ],
+			"run_at": "document_end"
+		},
+		{
+			"js": [ "jQuery.js", "contentScripts/contentScript3.js" ],
+			"matches": [ "https://www.nasdaq.com/market-activity/ipos/financial-filings*" ],
+			"run_at": "document_end"
+		},
+		{
+			"js": [ "jQuery.js", "contentScripts/contentScript4.js" ],
+			"matches": [ "https://www.nasdaq.com/market-activity/ipos/experts*" ],
+			"run_at": "document_end"
+		},
+		{
+			"js": [ "jQuery.js", "contentScripts/contentScript5.js" ],
+			"matches": [ "https://www.nasdaq.com/market-activity/stocks/*/historical" ],
+			"run_at": "document_end"
+		},
+		{
+			"js": [ "jQuery.js", "contentScripts/contentScript6.js" ],
+			"matches": [ "https://secfilings.nasdaq.com/filingFrameset.asp?FilingID=*" ],
+			"run_at": "document_end"
+		}
+	]
+}
