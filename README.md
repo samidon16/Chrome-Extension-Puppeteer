@@ -2,11 +2,11 @@
 
 This Google Chrome extension automates collecting IPO information from the NASDAQ website.
 
-##Overview:
+## Overview:
 
-This Google Chrome Extension uses version 3 of the Google Chrome Extension manifest and API.
+Uses version 3 of the Google Chrome Extension manifest and API.
 
-###Running the extension
+### Running the extension
 
 This extension automates collecting data from the NASDAQ exchange website regarding initial public offerings (IPOs). The extension is activated by clicking on the extension icon to initiate an action on the NASDAQ IPO web page:
 
@@ -14,29 +14,29 @@ https://www.nasdaq.com/market-activity/ipos
 
 The action triggers an event listener in the background script (background.js), which then injects contentScript1.js into the page. All other content scripts are run automatically on their respective web pages and are declared in the manifest.
 
-###background.js
+### background.js
 
-###Content Scripts
+### Content Scripts
 
-##Purpose:
+## Purpose:
 
-##Getting Started:
+## Getting Started:
 
-###Adding new variables
+### Adding new variables
 
-###Adding New Pages
+### Adding New Pages
 
 
-##Existing Issues:
+## Existing Issues:
 
-###Retrieving data
+### Retrieving data
 
-###Randomly Stalling Out
+### Randomly Stalling Out
 
-###Missing companies
+### Missing companies
 
-###Net Income
+### Net Income
 
-###Run Time
+### Run Time
 
-##Adding new content:
+## Adding new content:
