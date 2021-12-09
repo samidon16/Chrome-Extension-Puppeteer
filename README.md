@@ -30,7 +30,7 @@ Version 3 of the Google Chrome Extension API prevents writing to files. Currentl
 
 ### Stalling Out
 
-There are abnormallities when loading web pages that can cause the extension to stall out. The extension stalling out is relatively rare, but there are many seemingly unconnected causes. Rather than accounting for each abnormallity separately, a system needs to be implemented in background.js to detect the page stalling out. Then, the page should either be reloaded or skipped.
+There are abnormalities when loading web pages that can cause the extension to stall out. The extension stalling out is relatively rare, but there are many seemingly unconnected causes. Rather than accounting for each abnormality separately, a system needs to be implemented in background.js to detect the page stalling out. Then, the page should either be reloaded or skipped.
 
 ### Missing companies
 
