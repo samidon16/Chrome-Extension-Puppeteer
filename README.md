@@ -14,13 +14,13 @@ https://www.nasdaq.com/market-activity/ipos
 
 The action triggers an event listener in the background script (background.js), which then injects contentScript1.js into the page. All other content scripts are run automatically on their respective web pages and are declared in the manifest.
 
+### Getting Started:
+
 ### background.js
 
 ### Content Scripts
 
 ## Purpose:
-
-## Getting Started:
 
 ### Adding new variables
 
