@@ -38,10 +38,6 @@ Some companies have been delisted from their exchange or changed their exchange 
 
 Stock prices for delisted companies are not on public websites, and can only be found through paid database subscriptions. A financial database should be chosen and added to the extension for data collection.
 
-### Net Income
-
-Net income is currently found on the NASDAQ website under a company's IPO page in financials and fillings. The net income listed there is always positive, regardless of if the company had a let loss. A process must be added to the extension to open the SEC documents listed on that page and determine whether the net income was positive or negative.
-
 ### Run Time
 
 Currently, each web page is opened by the extension one after another, which costs a considerable amount of time for every company. As many pages as possible should be opened and mined for data simultaneously.
